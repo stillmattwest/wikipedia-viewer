@@ -3,7 +3,7 @@ $(document).ready(function () {
     function loadPage(title) {
         var url = "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&rvprop=content&titles=" + title + "&callback=?";
         if (title === 'random') {
-            url = 'http://en.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json&callback=?';
+            url = 'https://en.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json&callback=?';
         }
         var queryData = "";
         $.ajax({
